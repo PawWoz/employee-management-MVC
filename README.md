@@ -1,34 +1,90 @@
-# Employee Management System
+<a id="readme-top"></a>
 
-A web application built with **ASP.NET Core MVC** using **Entity Framework Core**, designed for managing employees and departments within a company.
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![project_license][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Features
+<br />
+<div align="center">
+  <a href="https://github.com/github_username/repo_name">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-### Employees
-- Browse the list of employees
-- Search employees by name, surname, or other criteria
-- Sort employees by various columns (e.g. last name, department)
-- Add a new employee
-- Edit existing employee details
-- Delete an employee
+<h3 align="center">Employee Management System</h3>
 
-### Departments
-- View list of departments
-- Add a new department
-- Delete a department
+  <p align="center">
+    A web application built with ASP.NET Core MVC and Entity Framework Core for managing employees and departments.
+    <br />
+    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    &middot;
+    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    &middot;
+    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
 
-## Technologies Used
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-- **ASP.NET Core MVC** – application architecture based on the Model-View-Controller pattern
-- **Razor Views** – server-side rendering engine used for generating dynamic HTML views
-- **Entity Framework Core** – object-relational mapping (ORM) for database operations
-- **C#** – backend programming language
-- **SQL Server – relational database
+## About The Project
 
-## Running the Project Locally
-1. Clone the repository
-2. Apply database migrations: dotnet ef database update
-3. Open your browser and go to:
-  http://localhost:5000
-  or
-  https://localhost:5001 if using HTTPS
+![Product Screenshot](images/screenshot.png)
+
+This is a web application built with **ASP.NET Core MVC** and **Entity Framework Core** that enables managing employees and departments in a company.
+
+### Features
+
+- View, search, sort, add, edit, and delete employees
+- View, add, and delete departments
+
+### Built With
+
+- [ASP.NET Core MVC](https://docs.microsoft.com/en-us/aspnet/core/mvc/overview)
+- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/)
+- [Razor Views](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor)
+- C#
+- SQL Server / SQLite
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Getting Started
+
+### Prerequisites
+
+- [.NET 6 SDK or newer](https://dotnet.microsoft.com/download)
+- SQL Server or SQLite (depending on your setup)
+
+### Installation
+
+1. Clone the repo
+   ```bash
+   git clone https://github.com/github_username/repo_name.git
+   cd repo_name
