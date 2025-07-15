@@ -1,0 +1,180 @@
+﻿@model List<Models.User>
+@{
+}
+
+<h2 class="text-center mb-5">Lista pracowników</h2>
+
+<div class="row mb-3">
+	<div class="col-auto">
+		<a class="btn btn-primary" asp-controller="Users" asp-action="Create">Dodaj nowego pracownika</a>
+	</div>
+	<div class="col-auto">
+		<a class="btn btn-secondary" asp-action="AddDepartment">Dodaj dział</a>
+	</div>
+</div>
+
+<div class="row mb-5">
+	<div class="col">
+		<form method="get" class="mb-3">
+			<div class="input-group">
+				<input type="text" name="search" class="form-control" value="@ViewBag.Search" placeholder="Szukaj...">
+				<button type="submit" class="btn btn-primary">Szukaj</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				<a asp-action="Index"
+				   asp-route-sortField="ID"
+				   asp-route-sortOrder="@(ViewBag.SortField == "ID" && ViewBag.SortOrder == "asc" ? "desc" : "asc")"
+				   asp-route-search="@ViewBag.Search">
+					ID
+					@if (ViewBag.SortField == "ID")
+					{
+						<span>
+							@(ViewBag.SortOrder == "asc" ? "↑" : "↓")
+						</span>
+					}
+				</a>
+			</th>
+
+
+			<th>
+				<a asp-action="Index"
+				   asp-route-sortField="FirstName"
+				   asp-route-sortOrder="@(ViewBag.SortField == "FirstName" && ViewBag.SortOrder == "asc" ? "desc" : "asc")"
+				   asp-route-search="@ViewBag.Search">
+					Imię
+					@if (ViewBag.SortField == "FirstName")
+					{
+						<span>
+							@(ViewBag.SortOrder == "asc" ? "↑" : "↓")
+						</span>
+					}
+				</a>
+			</th>
+
+			<th>
+				<a asp-action="Index"
+				   asp-route-sortField="LastName"
+				   asp-route-sortOrder="@(ViewBag.SortField == "LastName" && ViewBag.SortOrder == "asc" ? "desc" : "asc")"
+				   asp-route-search="@ViewBag.Search">
+					Nazwisko
+					@if (ViewBag.SortField == "LastName")
+					{
+						<span>
+							@(ViewBag.SortOrder == "asc" ? "↑" : "↓")
+						</span>
+					}
+				</a>
+			</th>
+
+
+			<th>
+				<a asp-action="Index"
+				   asp-route-sortField="Email"
+				   asp-route-sortOrder="@(ViewBag.SortField == "Email" && ViewBag.SortOrder == "asc" ? "desc" : "asc")"
+				   asp-route-search="@ViewBag.Search">
+					Email
+					@if (ViewBag.SortField == "Email")
+					{
+						<span>
+							@(ViewBag.SortOrder == "asc" ? "↑" : "↓")
+						</span>
+					}
+				</a>
+			</th>
+
+
+			<th>
+				<a asp-action="Index"
+				   asp-route-sortField="EmploymentDate"
+				   asp-route-sortOrder="@(ViewBag.SortField == "EmploymentDate" && ViewBag.SortOrder == "asc" ? "desc" : "asc")"
+				   asp-route-search="@ViewBag.Search">
+					Data zatrudnienia
+					@if (ViewBag.SortField == "EmploymentDate")
+					{
+						<span>
+							@(ViewBag.SortOrder == "asc" ? "↑" : "↓")
+						</span>
+					}
+				</a>
+			</th>
+
+
+			<th>
+				<a asp-action="Index"
+				   asp-route-sortField="Salary"
+				   asp-route-sortOrder="@(ViewBag.SortField == "Salary" && ViewBag.SortOrder == "asc" ? "desc" : "asc")"
+				   asp-route-search="@ViewBag.Search">
+					Wypłata
+					@if (ViewBag.SortField == "Salary")
+					{
+						<span>
+							@(ViewBag.SortOrder == "asc" ? "↑" : "↓")
+						</span>
+					}
+				</a>
+			</th>
+
+
+			<th>
+				<a asp-action="Index"
+				   asp-route-sortField="Department"
+				   asp-route-sortOrder="@(ViewBag.SortField == "Department" && ViewBag.SortOrder == "asc" ? "desc" : "asc")"
+				   asp-route-search="@ViewBag.Search">
+					Dział
+					@if (ViewBag.SortField == "Department")
+					{
+						<span>
+							@(ViewBag.SortOrder == "asc" ? "↑" : "↓")
+						</span>
+					}
+				</a>
+			</th>
+
+		</tr>
+	</thead>
+
+	<tbody>
+		@foreach (var user in Model)
+		{
+			<tr>
+				<td>@user.ID</td>
+				<td>@user.FirstName</td>
+				<td>@user.LastName</td>
+				<td>@user.Email</td>
+				<td>@user.EmploymentDate</td>
+				<td>@user.Salary</td>
+				<td>@string.Join(", ", user.Departments.Select(d => d.Name))</td>
+				<td style="white-space:nowrap">
+					<a class="btn btn-primary btn-sm" asp-controller="Users" asp-action="Edit" asp-route-id="@user.ID">Edytuj</a>
+				</td>
+				<td style="white-space:nowrap">
+					<form asp-action="Delete" method="post" asp-controller="Users" style="display:inline;">
+						<input type="hidden" name="id" value="@user.ID" />
+						<button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Na pewno chcesz usunąć tego użytkownika?');">Usuń</button>
+					</form>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+<div class="d-flex justify-content-center">
+	<nav>
+		<ul class="pagination">
+			@for (int i = 1; i <= ViewBag.TotalPages; i++)
+			{
+				var activeClass = i == ViewBag.CurrentPage ? "active" : "";
+				<li class="page-item @activeClass">
+					<a class="page-link" asp-action="Index" asp-route-page="@i">@i</a>
+				</li>
+			}
+		</ul>
+	</nav>
+</div>

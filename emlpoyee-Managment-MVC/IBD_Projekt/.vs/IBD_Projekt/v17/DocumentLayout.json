@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\wozig\\OneDrive\\Pulpit\\IBD_Projekt_Pawe\u0142_Wozign\u00F3j\\IBD_Projekt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E70F3-4EE6-41FF-8530-2ACB9E259C92}|IBD_Projekt.csproj|c:\\users\\wozig\\onedrive\\pulpit\\ibd_projekt_pawe\u0142_wozign\u00F3j\\ibd_projekt\\views\\departments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7C6E70F3-4EE6-41FF-8530-2ACB9E259C92}|IBD_Projekt.csproj|solutionrelative:views\\departments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E70F3-4EE6-41FF-8530-2ACB9E259C92}|IBD_Projekt.csproj|c:\\users\\wozig\\onedrive\\pulpit\\ibd_projekt_pawe\u0142_wozign\u00F3j\\ibd_projekt\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C6E70F3-4EE6-41FF-8530-2ACB9E259C92}|IBD_Projekt.csproj|solutionrelative:controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C6E70F3-4EE6-41FF-8530-2ACB9E259C92}|IBD_Projekt.csproj|c:\\users\\wozig\\onedrive\\pulpit\\ibd_projekt_pawe\u0142_wozign\u00F3j\\ibd_projekt\\views\\departments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7C6E70F3-4EE6-41FF-8530-2ACB9E259C92}|IBD_Projekt.csproj|solutionrelative:views\\departments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\wozig\\OneDrive\\Pulpit\\IBD_Projekt_Pawe\u0142_Wozign\u00F3j\\IBD_Projekt\\Views\\Departments\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departments\\Index.cshtml",
+              "ToolTip": "C:\\Users\\wozig\\OneDrive\\Pulpit\\IBD_Projekt_Pawe\u0142_Wozign\u00F3j\\IBD_Projekt\\Views\\Departments\\Index.cshtml",
+              "RelativeToolTip": "Views\\Departments\\Index.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-02T07:44:18.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\wozig\\OneDrive\\Pulpit\\IBD_Projekt_Pawe\u0142_Wozign\u00F3j\\IBD_Projekt\\Views\\Departments\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departments\\Create.cshtml",
+              "ToolTip": "C:\\Users\\wozig\\OneDrive\\Pulpit\\IBD_Projekt_Pawe\u0142_Wozign\u00F3j\\IBD_Projekt\\Views\\Departments\\Create.cshtml",
+              "RelativeToolTip": "Views\\Departments\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-02T07:47:23.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\wozig\\OneDrive\\Pulpit\\IBD_Projekt_Pawe\u0142_Wozign\u00F3j\\IBD_Projekt\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentsController.cs",
+              "ToolTip": "C:\\Users\\wozig\\OneDrive\\Pulpit\\IBD_Projekt_Pawe\u0142_Wozign\u00F3j\\IBD_Projekt\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwFAAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T07:27:09.538Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+﻿@model List<Models.Department>
+@{
+}
+
+<h2 class="text-center mb-5">Lista działów</h2>
+
+@if (TempData["DeleteError"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["DeleteError"]
+    </div>
+}
+
+<div class="row mb-3">
+    <div class="col-auto">
+        <a class="btn btn-primary" asp-controller="Departments" asp-action="Create">Dodaj nowy dział</a>
+    </div>
+</div>
+
+<div class="row mb-5">
+    <div class="col">
+        <form method="get" class="mb-3">
+            <div class="input-group">
+                <input type="text" name="search" class="form-control" value="@ViewBag.Search" placeholder="Wyszukaj dział">
+                <button type="submit" class="btn btn-primary">Szukaj</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index"
+                   asp-route-sortField="ID"
+                   asp-route-sortOrder="@(ViewBag.SortField == "ID" && ViewBag.SortOrder == "asc" ? "desc" : "asc")"
+                   asp-route-search="@ViewBag.Search">
+                    ID
+                    @if (ViewBag.SortField == "ID")
+                    {
+                        <span>@(ViewBag.SortOrder == "asc" ? "↑" : "↓")</span>
+                    }
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index"
+                   asp-route-sortField="Name"
+                   asp-route-sortOrder="@(ViewBag.SortField == "Name" && ViewBag.SortOrder == "asc" ? "desc" : "asc")"
+                   asp-route-search="@ViewBag.Search">
+                    Nazwa działu
+                    @if (ViewBag.SortField == "Name")
+                    {
+                        <span>@(ViewBag.SortOrder == "asc" ? "↑" : "↓")</span>
+                    }
+                </a>
+            </th>
+            <th>Liczba pracowników</th>
+            <th>Akcje</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dept in Model)
+        {
+            <tr>
+                <td>@dept.ID</td>
+                <td>@dept.Name</td>
+                <td>@dept.Users?.Count</td>
+                <td style="white-space: nowrap;">
+                    <form asp-action="Delete" asp-controller="Departments" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@dept.ID" />
+                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Na pewno chcesz usunąć ten dział?');">Usuń</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="d-flex justify-content-center">
+    <nav>
+        <ul class="pagination">
+            @for (int i = 1; i <= ViewBag.TotalPages; i++)
+            {
+                var activeClass = i == ViewBag.CurrentPage ? "active" : "";
+                <li class="page-item @activeClass">
+                    <a class="page-link" asp-action="Index" asp-route-page="@i" asp-route-search="@ViewBag.Search" asp-route-sortField="@ViewBag.SortField" asp-route-sortOrder="@ViewBag.SortOrder">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>
+

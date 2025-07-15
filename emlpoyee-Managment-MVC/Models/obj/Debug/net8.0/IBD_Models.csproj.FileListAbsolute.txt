@@ -1,0 +1,11 @@
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\Models\bin\Debug\net8.0\IBD_Models.deps.json
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\Models\bin\Debug\net8.0\IBD_Models.dll
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\Models\bin\Debug\net8.0\IBD_Models.pdb
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\Models\obj\Debug\net8.0\IBD_Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\Models\obj\Debug\net8.0\IBD_Models.AssemblyInfoInputs.cache
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\Models\obj\Debug\net8.0\IBD_Models.AssemblyInfo.cs
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\Models\obj\Debug\net8.0\IBD_Models.csproj.CoreCompileInputs.cache
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\Models\obj\Debug\net8.0\IBD_Models.dll
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\Models\obj\Debug\net8.0\refint\IBD_Models.dll
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\Models\obj\Debug\net8.0\IBD_Models.pdb
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\Models\obj\Debug\net8.0\ref\IBD_Models.dll

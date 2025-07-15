@@ -1,0 +1,72 @@
+﻿@model Models.User
+@{
+}
+
+<div class="row">
+	<div class="col-md-8 mx-auto rounded border p-3">
+		<h2 class="text-center mb-5">Nowy pracownik</h2>
+
+		<form method="post" enctype="multipart/form-data">
+			<div class="row mb-3">
+				<label class="col-sm-4 col-form-label">Imię</label>
+				<div class="col-sm-8">
+					<input class="form-control" asp-for="FirstName">
+					<span asp-validation-for="FirstName" class="text-danger"></span>
+				</div>
+			</div>
+
+		<div class="row mb-3">
+			<label class="col-sm-4 col-form-label">Nazwisko</label>
+			<div class="col-sm-8">
+				<input asp-for="LastName" class="form-control" />
+				<span asp-validation-for="LastName" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="row mb-3">
+			<label class="col-sm-4 col-form-label">Email</label>
+			<div class="col-sm-8">
+				<input asp-for="Email" class="form-control" />
+				<span asp-validation-for="Email" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="row mb-3">
+			<label class="col-sm-4 col-form-label">Data zatrudnienia</label>
+			<div class="col-sm-8">
+					<input asp-for="EmploymentDate" class="form-control" type="date" max="@DateTime.Today.ToString("yyyy-MM-dd")" />
+				<span asp-validation-for="EmploymentDate" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="row mb-3">
+			<label class="col-sm-4 col-form-label">Wynagrodzenie</label>
+			<div class="col-sm-8">
+				<input asp-for="Salary" class="form-control" />
+				<span asp-validation-for="Salary" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="row mb-4">
+			<label class="col-sm-4 col-form-label">Działy</label>
+			<div class="col-sm-8">
+				<select asp-for="SelectedDepartmentIds" asp-items="@(new MultiSelectList(ViewBag.Departments, "ID", "Name"))" class="form-control" multiple>
+				</select>
+				<span asp-validation-for="SelectedDepartmentIds" class="text-danger"></span>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="offset-sm-4 col-sm-4 d-grid">
+				<button type="submit" class="btn btn-primary">Dodaj</button>
+			</div>
+			<div class="col-sm-4 d-grid">
+				<a class="btn btn-outline-primary" asp-controller="Users" asp-action="Index" role="button">
+					Anuluj
+				</a>
+			</div>
+		</div>
+		</form>
+	</div>
+</div>

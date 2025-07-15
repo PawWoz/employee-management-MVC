@@ -1,0 +1,15 @@
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\DatabaseServices\bin\Debug\net8.0\IBD_DatabaseServices.deps.json
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\DatabaseServices\bin\Debug\net8.0\IBD_DatabaseServices.dll
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\DatabaseServices\bin\Debug\net8.0\IBD_DatabaseServices.pdb
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\DatabaseServices\bin\Debug\net8.0\IBD_Models.dll
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\DatabaseServices\bin\Debug\net8.0\IBD_Models.pdb
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\DatabaseServices\obj\Debug\net8.0\IBD_DatabaseServices.csproj.AssemblyReference.cache
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\DatabaseServices\obj\Debug\net8.0\IBD_DatabaseServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\DatabaseServices\obj\Debug\net8.0\IBD_DatabaseServices.AssemblyInfoInputs.cache
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\DatabaseServices\obj\Debug\net8.0\IBD_DatabaseServices.AssemblyInfo.cs
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\DatabaseServices\obj\Debug\net8.0\IBD_DatabaseServices.csproj.CoreCompileInputs.cache
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\DatabaseServices\obj\Debug\net8.0\IBD_Data.DD791557.Up2Date
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\DatabaseServices\obj\Debug\net8.0\IBD_DatabaseServices.dll
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\DatabaseServices\obj\Debug\net8.0\refint\IBD_DatabaseServices.dll
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\DatabaseServices\obj\Debug\net8.0\IBD_DatabaseServices.pdb
+C:\Users\wozig\OneDrive\Pulpit\IBD_Projekt_Paweł_Wozignój\DatabaseServices\obj\Debug\net8.0\ref\IBD_DatabaseServices.dll
