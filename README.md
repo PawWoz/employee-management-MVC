@@ -45,3 +45,21 @@ Allows browsing, adding, editing, deleting, and searching employees and departme
 1. Install dependencies and update the database: dotnet restore / dotnet ef database update
 2. Run the application: dotnet run
 3. Open in your browser: http://localhost:5000
+
+## Screenshots
+
+### Employees list view
+
+![Employees List](images/employees-list.png)
+
+### Add new employee form
+
+![Add Employee](images/add-employee.png)
+
+### Departments overview
+
+![Departments](images/departments-list.png)
+
+### Searching
+
+![Searching](images/searching.png)
