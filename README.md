@@ -1,90 +1,55 @@
 <a id="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![project_license][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+# 🚀 Employee Management System
 
-<br />
+A web application for managing employees and departments in a company, built with **ASP.NET Core MVC** and **Entity Framework Core**.  
+Allows browsing, adding, editing, deleting, and searching employees and departments.
+
+---
+
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-<h3 align="center">Employee Management System</h3>
+[![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dot-net&logoColor=white)](https://dotnet.microsoft.com/)  
+[![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-6.0-blue?style=for-the-badge&logo=asp.net&logoColor=white)](https://dotnet.microsoft.com/apps/aspnet)  
+[![Entity Framework Core](https://img.shields.io/badge/Entity_Framework_Core-339933?style=for-the-badge&logo=entity-framework&logoColor=white)](https://docs.microsoft.com/en-us/ef/core/)  
+[![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/csharp/)  
+[![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)](https://www.microsoft.com/en-us/sql-server)  
+[![Razor](https://img.shields.io/badge/Razor-512BD4?style=for-the-badge&logo=asp.net&logoColor=white)](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor)
 
-  <p align="center">
-    A web application built with ASP.NET Core MVC and Entity Framework Core for managing employees and departments.
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    &middot;
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    &middot;
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
-  </p>
 </div>
 
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+---
 
-## About The Project
+## 📋 Features
 
-![Product Screenshot](images/screenshot.png)
+### Employees
+- View paginated list of employees
+- Search and filter by first name, last name, or department
+- Sort by various columns (last name, department, position)
+- Add, edit, and delete employees
 
-This is a web application built with **ASP.NET Core MVC** and **Entity Framework Core** that enables managing employees and departments in a company.
+### Departments
+- View list of departments
+- Add new departments
+- Delete departments (with dependency checks)
 
-### Features
+---
 
-- View, search, sort, add, edit, and delete employees
-- View, add, and delete departments
+## 🛠 Technologies Used
 
-### Built With
+| Technology            | Description                              | Badge                                      |
+|-----------------------|------------------------------------------|--------------------------------------------|
+| ASP.NET Core MVC      | Web application framework                | ![ASP.NET](https://img.shields.io/badge/ASP.NET_Core-6.0-blue?style=flat-square&logo=asp.net&logoColor=white)   |
+| Entity Framework Core | Object-Relational Mapper for database access | ![EF Core](https://img.shields.io/badge/Entity_Framework_Core-339933?style=flat-square&logo=entity-framework&logoColor=white) |
+| Razor Views           | View engine for generating HTML          | ![Razor](https://img.shields.io/badge/Razor-512BD4?style=flat-square&logo=asp.net&logoColor=white)                |
+| C#                    | Programming language                      | ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)                     |
+| SQL Server / SQLite   | Database system                           | ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white) |
 
-- [ASP.NET Core MVC](https://docs.microsoft.com/en-us/aspnet/core/mvc/overview)
-- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/)
-- [Razor Views](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor)
-- C#
-- SQL Server / SQLite
+---
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 🚀 Getting Started
 
-## Getting Started
-
-### Prerequisites
-
-- [.NET 6 SDK or newer](https://dotnet.microsoft.com/download)
-- SQL Server or SQLite (depending on your setup)
-
-### Installation
-
-1. Clone the repo
+1. **Clone the repository**
    ```bash
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/your_username/repo_name.git
    cd repo_name
