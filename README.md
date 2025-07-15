@@ -50,7 +50,7 @@ Allows browsing, adding, editing, deleting, and searching employees and departme
 
 ### Employees list view
 
-![Employees List](images/employees-list.png)
+![Employees List](images/employee-list.png)
 
 ### Add new employee form
 
