@@ -22,13 +22,10 @@ Allows browsing, adding, editing, deleting, and searching employees and departme
 
 ## 📋 Features
 
-### Employees
 - View paginated list of employees
 - Search and filter by first name, last name, or department
 - Sort by various columns (last name, department, position)
 - Add, edit, and delete employees
-
-### Departments
 - View list of departments
 - Add new departments
 - Delete departments (with dependency checks)
@@ -37,9 +34,9 @@ Allows browsing, adding, editing, deleting, and searching employees and departme
 
 ## 🛠 Technologies Used
 
-| Technology            | Description                              | Badge                                      |
-|-----------------------|------------------------------------------|--------------------------------------------|
-| ASP.NET Core MVC      | Web application framework                | ![ASP.NET](https://img.shields.io/badge/ASP.NET_Core-6.0-blue?style=flat-square&logo=asp.net&logoColor=white)   |
+| Technology            | Description                              |                                       
+|-----------------------|------------------------------------------|
+| ASP.NET Core MVC      | Web application framework                | ![ASP.NET](https://img.shields.io/badge/ASP.NET_Core-8.0-blue?style=flat-square&logo=asp.net&logoColor=white)   |
 | Entity Framework Core | Object-Relational Mapper for database access | ![EF Core](https://img.shields.io/badge/Entity_Framework_Core-339933?style=flat-square&logo=entity-framework&logoColor=white) |
 | Razor Views           | View engine for generating HTML          | ![Razor](https://img.shields.io/badge/Razor-512BD4?style=flat-square&logo=asp.net&logoColor=white)                |
 | C#                    | Programming language                      | ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)                     |
@@ -49,7 +46,6 @@ Allows browsing, adding, editing, deleting, and searching employees and departme
 
 ## 🚀 Getting Started
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your_username/repo_name.git
-   cd repo_name
+1. Install dependencies and update the database: dotnet restore / dotnet ef database update
+2. Run the application: dotnet run
+3. Open in your browser: http://localhost:5000
